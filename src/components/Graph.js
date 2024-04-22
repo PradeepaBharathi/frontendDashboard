@@ -3,7 +3,7 @@ import axios from "axios";
 import { Bar } from "react-chartjs-2";
 import "chart.js/auto";
 
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://backenddashboard-0pxs.onrender.com";
 
 const Graph = () => {
   const [chartData, setChartData] = useState({

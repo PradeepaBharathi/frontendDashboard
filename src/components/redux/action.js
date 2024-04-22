@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = "https://backenddashboard-0pxs.onrender.com";
 
 export const registerUser = (userData) => async (dispatch) => {
   try {
