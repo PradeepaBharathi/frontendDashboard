@@ -1,0 +1,26 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+
+th{
+    background-color: #00B0F0;
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 6rem;
+}
+/* Styles for mobile devices */
+@media screen and (min-width:320px) and (max-width:475px) {
+  table {
+    font-size: 0.7rem; /* Adjust font size */
+  }
+  th, td {
+    padding: 0.1rem; /* Adjust padding */
+  }
+}

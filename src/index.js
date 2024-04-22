@@ -3,11 +3,25 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+import { combineReducers } from "redux";
+import { configureStore } from "@reduxjs/toolkit";
+import { Provider } from "react-redux";
+import formReducer from './components/redux/reducer';
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const reducerForm = combineReducers({
+  form: formReducer
+})
+
+const store = configureStore({
+  reducer:reducerForm
+})
+
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>
 );
 
